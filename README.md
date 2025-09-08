@@ -26,7 +26,7 @@ Asigură gestionarea produselor și autentificarea utilizatorilor.
 
 mvn spring-boot:run
 
-📌 Endpoint-uri
+## 📌 Endpoint-uri
 
 POST /api/auth/register – înregistrare
 
