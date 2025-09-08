@@ -15,16 +15,16 @@ Asigură gestionarea produselor și autentificarea utilizatorilor.
 
 ## 🚀 Rulare proiect
 
-1. Clonează repository:
-   ```bash
-   git clone https://github.com/USERNAME/cake-shop-backend.git
-2.Deschide proiectul în IntelliJ IDEA (Maven project).
-
-3.Setează datele de conectare în application.properties.
-
-4.Rulează aplicația:
-
-mvn spring-boot:run
+   1. Clonează repository:
+      ```bash
+      git clone https://github.com/USERNAME/cake-shop-backend.git
+   2.Deschide proiectul în IntelliJ IDEA (Maven project).
+   
+   3.Setează datele de conectare în application.properties.
+   
+   4.Rulează aplicația:
+   
+   mvn spring-boot:run
 
 ## 📌 Endpoint-uri
 
