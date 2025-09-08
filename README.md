@@ -1,59 +1,38 @@
-# Cofetarie - Spring Boot Application
+# 🍰 Cake Shop Backend
 
-POST http://localhost:8080/api/cart/{username}/add/{idProduct}
-POST http://localhost:8080/api/cart/{username}
-GET  http://localhost:8080/api/cart/{username}
-exemplu test in Postman:
-{
-"id": 1,
-"user": {
-"id": 5,
-"username": "user",
-"email": "alex@example.com"
-},
-"items": [
-{
-"id": 3,
-"productName": "Tort de ciocolată",
-"quantity": 1,
-"price": 100.0
-}
-],
-"totalPrice": 100.0
-}
+Backend pentru aplicația web a unei cofetării, realizat cu **Spring Boot** și **PostgreSQL (Supabase)**.  
+Asigură gestionarea produselor și autentificarea utilizatorilor.
 
-POST  http://localhost:8080/api/products
-exemplu test in Postman{
-"name": "Amandina",
-"description": "Amandina copilariei",
-"price": 25,
-"category": {
-"id": 3
-}
-}
+---
 
-POST http://localhost:8080/api/auth/register
-exemplu Postman:
-{
-"username": "testuser",
-"password": "testpassword"
-}
+## 🛠️ Tehnologii
+- Java 17, Spring Boot 3  
+- Spring Security + JWT  
+- PostgreSQL (Supabase)  
+- Maven  
 
-GET /api/products Obține toate produsele
-GET /api/products/{id} Detalii produs
+---
 
-# GET /api/cart/{username} Obține conținutul coșului
+## 🚀 Rulare proiect
 
-# POST /api/cart/{username}/add/{id} Adaugă produs în coș
+1. Clonează repository:
+   ```bash
+   git clone https://github.com/USERNAME/cake-shop-backend.git
+2.Deschide proiectul în IntelliJ IDEA (Maven project).
 
-# PUT /api/cart/{username}/update/{id} Actualizează cantitatea
+3.Setează datele de conectare în application.properties.
 
-# DELETE /api/cart/{username}/remove/{id} Elimină produs din coș
+4.Rulează aplicația:
 
-# DELETE /api/cart/{username}/clear	Șterge conținutul coșului
+mvn spring-boot:run
 
-# POST /api/cart/{username}/checkout	Plasează comandă
+📌 Endpoint-uri
 
-# GET /api/orders/{username} Obține comenzile utilizatorului
+POST /api/auth/register – înregistrare
 
+POST /api/auth/login – autentificare
+
+GET /api/products – listă produse
+
+POST /api/products – adaugă produs (admin)
 
